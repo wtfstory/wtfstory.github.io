@@ -862,7 +862,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 @media (max-width: 767px) {
   .footer .about {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -880,7 +880,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .footer .about li {
   list-style: disc;
-  margin-left: 25px;
   line-height: 1.5;
 }
 
