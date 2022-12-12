@@ -1,0 +1,99 @@
+  .cart-menu {
+    float: left;
+    width: 30%;
+    @include pad-v-1 {
+      float: none;
+      width: 90%;
+      margin-bottom: 2em;
+    }
+    h3 {
+      font-size: 24px;
+      padding-bottom: 1.5em;
+    }
+    .fa-leaf {
+      font-size: 36px;
+    }
+    li {
+      width: 90%;
+      border-bottom: 1px solid $cus-primary;
+      &:hover {
+        background: $cus-primary;
+      }
+      @include pad-v-1 {
+        width: 50%;
+      }
+    }
+    a {
+      color: $cus-primary;
+      padding: 5% 0 5% 3%;
+      display: block;
+      &:hover {
+        color: $cus-light;
+      }
+    }
+  }
+  .cart-content {
+    float: left;
+    width: 65%;
+    margin-left: 2%;
+    @include pad-v-1 {
+      width: 95%;
+      float: none;
+    }
+  }
+    .cart-header {
+      .fa-search::before {
+        display: inline-block;
+        background: $cus-primary;
+        color: $cus-light;
+        padding: 63%;
+        position: relative;
+        left: -43px;
+        top: 1px;
+        @include pad-v {
+          top: 2px;
+          left: -40px;
+          padding: 59%;
+        }
+        @include pad-v-1 {
+          display: none;
+        }
+      }
+    }
+  .pure-form input[type=search] {
+    padding: 1%;
+    width: 60%;
+    border-radius: 0;
+    border: 2px solid $cus-primary;
+    &:focus {
+      border-color: $cus-primary;
+    }
+    @include pad-v-1 {
+      width: 90%;
+    }
+  }
+  #shopping-cart-link {
+    display: block;
+    float: right;
+    @include pad-v-1 {
+      display: none;
+    }
+  }
+  .fa-shopping-cart {
+    font-size: 26px;
+    color: $cus-primary;
+  }
+  .far.fa-heart {
+    display: inline;
+    &:hover, &:focus {
+      font-weight: bold;
+    }
+  }
+  .fa-heart::before {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: $cus-light;
+    font-size: 26px;
+    cursor: pointer;
+  }

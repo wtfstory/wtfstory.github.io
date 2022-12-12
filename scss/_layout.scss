@@ -1,0 +1,280 @@
+.wrap {
+  @include wrap(1024px);
+}
+.header {
+  position: relative;
+  background: url(../images/header_desktop.png) no-repeat;
+  background-size: 100% 100%;
+  height: 420px;
+  @include pad-v {
+    max-height: 300px;
+  }
+  @include iphone6-plus-v {
+    background: url(../images/header_mobile.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .top-bar {
+    max-height: 50px;
+    background: rgba(0, 0, 0, .5);
+    .show-menu {
+      display: none;
+      @include iphone6-plus-v {
+        display: block;
+        float: right;
+        margin: 1em;
+        padding: 2px 5px;
+      }
+    }
+    h1 {
+      float: left;
+      margin: 1em 0 1em 2.5em;
+      a {
+        background: url(../images/logo_header.svg) no-repeat;
+        width: 120px;
+        height: 24px;
+        @include hide-text;
+      }
+    }
+    .menu {
+      float: right;
+      margin-right: 18px;
+      @include iphone6-plus-v {
+        /* 隱藏選單 start */
+		    max-height: 0px;
+		    overflow: hidden;
+        /* 隱藏選單 end */
+        
+        /* 絕對定位在疊在網頁上 */
+        position: absolute;
+        z-index: 100;
+
+        top: 50px;
+        left: 0;
+        right: 0;
+
+        transition: max-height 2s;
+        
+        margin-top: 1px;
+      }
+      li {
+        float: left;
+        margin: 18px 0 17px 0;
+        @include iphone6-plus-v {
+          float: none;
+          background: $cus-secondary;
+          margin: 0;
+          border-bottom: 1px dashed $cus-primary;
+          padding: 5px;
+        }
+      }
+      a {
+        margin-right: 30px;
+        color: $cus-light;
+        @include iphone6-plus-v {
+          transition: all .5s;
+          color: $cus-primary;
+          display: inline-block;
+        }
+        &:focus {
+          @include iphone6-plus-v {
+              background: $cus-primary;
+              color: $cus-light;
+          }
+        }
+      }
+    }
+    .banner {
+      color: $cus-light;
+      position: absolute;
+      max-height: auto;
+      top: 30%;
+      bottom: 30%;
+      right: 30%;
+      left: 30%;
+      background: rgba(0, 0, 0, .3);
+      text-align: center;
+      @include desktop-m-1 {
+        right: 15%;
+        left: 15%;
+      }
+      @include pad-v {
+        right: 20%;
+        left: 20%;
+      }
+      @include pad-v-1 {
+        right: 5%;
+        left: 5%;
+      }
+      @include iphone6-plus-v {
+        max-width: 88%;
+        right: 8%;
+      }
+      h2 {
+        font-size: $h1-font-size;
+        margin: 20px 0 30px 0;
+        letter-spacing: 5px;
+        @include pad-v-1 {
+          letter-spacing: 1px;
+        }
+        @include iphone6-plus-v {
+          letter-spacing: 0;
+        }
+        @include iphone6-plus-v-1 {
+          font-size: 25px;
+        }
+      }
+      p {
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.footer {
+  @include footer($cus-secondary, $cus-primary);
+  .about, .contact, .community-website {
+    margin-top: 45px;
+    @include pad-v-1 {
+      margin-top: 0;
+      padding-top: 5%;
+    }
+  }
+  h3 {
+    margin-bottom: 1em;
+    font-size: $h2-font-size;
+  }
+  .about {
+    width: 30.33333%;
+    margin-left: 4%;
+    float: left;
+    @include pad-v-1 {
+      width: 65%;
+    }
+    p {
+      line-height: 1.1;
+      padding: 5px;
+    }
+  }
+  .contact {
+    width: 28.33333%;
+    margin-left: 1%;
+    float: left;
+    @include pad-v-1 {
+      width: 90%;
+    }
+    h3 {
+      @include pad-v-1 {
+        text-align: center;
+      }
+    }
+    ul {
+      @include pad-v-1 {
+        display: table;
+        margin: 0 auto;
+      }
+    }
+    li {
+      list-style: disc;
+      margin-left: 25px;
+      line-height: 1.5;
+    }
+  }
+  .community-website {
+    width: 32.33333%;
+    margin-right: 4%;
+    float: right;
+    @include pad-v-1 {
+      width: 30%;
+    }
+    h3 {
+      background: right url(../images/logo_footer.svg) no-repeat;
+      height: 48px;
+      @include pad-v {
+        background-size: 100% 100%;
+      }
+      @include pad-v-1 {
+        margin-bottom: 10%;
+      }
+      @include iphone6-plus-v {
+        margin-bottom: 0;
+      }
+    }
+    ul {
+      float: right;
+    }
+    li {
+      float: left;
+      a {
+        font-size: $h1-font-size;
+        text-indent: 10px;
+        @include pad-v-1 {
+          text-indent: 4px;
+        }
+      }
+    }
+    .fa-google-plus-square {
+      color: #db4437;
+    }
+    .fa-twitter-square {
+      color: #41abe1;
+    }
+    .fa-facebook-square {
+      color: #3a5795;
+    }
+  }
+}
+/* CartProduct */
+.l-list {
+  li {
+    float: left;
+    position: relative;
+    width: 31.33333%;
+    margin: 0 .5em 1em 0;
+    text-align: center;
+    box-shadow: 5px 5px 10px grey;
+    @include pad-v {
+      width: 47%;
+      display: inline-table;
+    }
+    @include pad-v-1 {
+      width: 90%;
+    }
+  }
+  a {
+    padding: 3% 5%;
+    border: 1px solid $cus-warning;
+    color: $cus-warning;
+    margin-bottom: .5em;
+    border-radius: 5px;
+    &:hover, &:focus {
+      background: $cus-warning;
+      color: $cus-light;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    margin: .5em 0;
+    letter-spacing: 2px;
+  }
+  .hr {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid $cus-primary;
+  }
+  &-title {
+    padding-bottom: 1em;
+  }
+  &-price {
+    padding: 10%;
+    font-size: 20px;
+    i {
+      font-style: italic;
+    }
+  }
+}
+/* jQ 點擊後, 動態在 body 加上 class */
+.menu-show .header .top-bar .menu {
+  @include iphone6-plus-v {
+    max-height: 100px;
+  }
+}
