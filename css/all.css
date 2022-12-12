@@ -862,7 +862,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 @media (max-width: 767px) {
   .footer .about {
-    #width: 65%;
+    width: 100%;
   }
 }
 
@@ -1290,7 +1290,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .map-form {
   height: auto;
-  padding-bottom: 6%;
+  padding-bottom: 12%;
   background: #f6f4f3;
 }
 
