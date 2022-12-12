@@ -695,12 +695,9 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .header .top-bar h1 a {
-  background: url(../images/WTF_STORY.svg) no-repeat;
-  background-attachment: fixed;
-  background-position: left;
-  width: 500px;
-  height: 200px;
-  scale: 0.6;
+  background: url(../images/logo_header.svg) no-repeat;
+  width: 120px;
+  height: 24px;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
@@ -918,8 +915,8 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .footer .community-website h3 {
-  background: right url(../images/avatar.png) no-repeat;
-  height:128px;
+  background: right url(../images/logo_footer.svg) no-repeat;
+  height: 48px;
 }
 
 @media (max-width: 768px) {
@@ -1146,8 +1143,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .today-chef {
   height: auto;
-  background: #908982;
-  #background: #3d1101;
+  background: #3d1101;
 }
 
 .today-chef .tc-picture {
@@ -1256,7 +1252,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .ex-share li .es-picture {
-  #scale: 0.2;
   float: left;
 }
 
@@ -1283,10 +1278,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .map-form {
   height: auto;
   padding-bottom: 4%;
-  #padding-left: 3%;
   background: #f6f4f3;
-  text-align: left;
-  font-size: 24px;
 }
 
 .map-form-title {
@@ -1301,17 +1293,14 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .map-form-title2 {
-  padding: 100px 100 40px 0;
+  padding: 0px 0 0px 0;
   font-size: 24px;
 }
 
 .map-form-title2 p {
-  text-align: left;
-  margin-left: 25%;
-  text-indent: 200;
+  text-align: center;
   line-height: 1.5;
   letter-spacing: 1px;
-  padding: 500px 100px 400px 100;
 }
 
 .map-form .map-pic {
