@@ -855,14 +855,14 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .footer .about {
-  width: 35%;
+  width: 33%;
   margin-left: 4%;
   float: left;
 }
 
 @media (max-width: 767px) {
   .footer .about {
-    width: 65%;
+    #width: 65%;
   }
 }
 
@@ -885,7 +885,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .footer .contact {
-  width: 28.33333%;
+  #width: 28.33333%;
   margin-left: 1%;
   float: left;
 }
@@ -1290,7 +1290,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .map-form {
   height: auto;
-  padding-bottom: 4%;
+  padding-bottom: 6%;
   background: #f6f4f3;
 }
 
