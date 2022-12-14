@@ -867,14 +867,15 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .footer .about p {
-  line-height: 1.1;
-  padding: 5px;
+  line-height: 1.2;
+  #padding: 5px;
 }
 
 @media (max-width: 767px) {
   .footer .about ul {
     display: table;
-    margin: 0 auto;
+	padding: 20px;
+    #margin: 0 auto;
   }
 }
 
@@ -1216,16 +1217,19 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .today-chef .article h4 {
   font-size: 22px;
-  padding-bottom: 10px;
+  #padding-bottom: 10px;
+  padding: 0 5% 10px 5%;
 }
 
 .today-chef .article h5 {
   font-size: 18px;
-  padding-bottom: 30px;
+  #padding-bottom: 30px;
+  padding: 0 5% 30px 5%;
 }
 
 .today-chef .article p {
   line-height: 1.4;
+  padding: 0 5% 0 5%;
 }
 
 .ex-share {
@@ -1289,7 +1293,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .map-form {
   height: auto;
-  padding-bottom: 12%;
+  padding: 0px 5% 12% 5%;
   background: #f6f4f3;
 }
 
@@ -1306,7 +1310,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
 .map-form-title2 {
   text-align: right;
-  padding: 0px 0 0px 0;
+  padding: 0px 0px 0px 0px;
   font-size: 22px;
   display:flex;
   justify-content:center;
