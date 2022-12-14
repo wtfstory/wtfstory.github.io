@@ -1305,12 +1305,16 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .map-form-title2 {
+  text-align: right;
   padding: 0px 0 0px 0;
   font-size: 22px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.map-form-title2 p {
-  text-align: center;
+.map-form-title3 {
+  text-align: left;
   line-height: 1.5;
   letter-spacing: 1px;
 }
