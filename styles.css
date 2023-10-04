@@ -2,20 +2,19 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #EC8F3F; /* 橘色背景 */
-    height: 100vh; /* 让容器充满整个视口高度 */
+    height: 100vh; /* 讓容器充滿整個視口高度 */
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; /* 设置相对定位，以便绝对定位元素相对于 body */
+    position: relative; /* 設置相對定位，以便絕對定位元素相對於 body */
 }
 
 .center-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center; /* 居中內容 */
+    margin-top: 20vh; /* 在上方和下方留出足夠多的空間 */
+    margin-bottom: 20vh;
 }
 
 h1 {
@@ -25,7 +24,7 @@ h1 {
 input[type="number"] {
     padding: 5px;
     font-size: 16px;
-    margin: 10px; /* 增加一些外边距 */
+    margin: 10px; /* 增加一些外邊距 */
 }
 
 button {
@@ -35,8 +34,11 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
-    margin: 10px; /* 增加一些外边距 */
+    margin: 10px; /* 增加一些外邊距 */
 }
 
 p#result {
-    font-size: 36px;
+    font-size: 36px; /* 更大的字體 */
+    font-weight: bold; /* 更粗的字體 */
+    margin: 20px; /* 增加一些外邊距 */
+}
