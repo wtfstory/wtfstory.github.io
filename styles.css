@@ -17,6 +17,10 @@ body {
     margin-bottom: 20vh;
 }
 
+.vertical-space {
+    height: 20px; /* 增加垂直空間的高度 */
+}
+
 h1 {
     color: #333;
 }
